@@ -29,4 +29,35 @@ int max = firstNumber;
 if (secondNumber > max) max = secondNumber;
 if (thirdNumber > max) max = thirdNumber;
 Console.WriteLine(max);
+
+
+Напишите программу, которая на вход принимает число и выдаёт, 
+является ли число чётным (делится ли оно на два без остатка).
+
+Console.Write ("Введите число:");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number %2 == 0)
+{
+    Console.Write ("Число чётное");
+}
+else
+{
+    Console.Write ("Число нечётное");
+}
+
+Напишите программу, которая на вход принимает число (N), 
+а на выходе показывает все чётные числа от 1 до N.
 */
+Console.Write("Введите число:");
+int number = Convert.ToInt32(Console.ReadLine());
+int newNumber = 1;
+    while (newNumber <= number)
+    {
+if (newNumber %2 == 0)
+{
+    Console.Write (newNumber);
+}
+newNumber++;
+    }
+        
+  
